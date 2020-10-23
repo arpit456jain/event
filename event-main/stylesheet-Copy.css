@@ -6,7 +6,12 @@
 
 
 
-
+#heading
+{
+	margin: 10px 40px;
+	font-size:4.5rem;
+	color: #fff;
+}
 
 html, body{
 	height: 100%;
@@ -14,6 +19,9 @@ html, body{
 
 .container{
 	height: 100%;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
 	background: url("black.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -117,6 +125,12 @@ right : 51%;
 
 bottom: 10%;
 top: 17%;
+}
+#heading
+{
+	margin: 10px 40px;
+	font-size:3.8rem;
+	color: #fff;
 }
 }
 
