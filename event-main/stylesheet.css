@@ -219,15 +219,15 @@ small{
 }
 .menu ul li{
 	
-	font-size: .5rem;
-	margin: 10px;
+	font-size: .8rem;
+	margin: 10px 6px;
 	
 }
 .signup-btn{
 	top: 35px;
-	right: 50px;
+	right: 5px;
 	position: absolute;
-	font-size: .4rem;
+	font-size: .6rem;
 }
 .app-text h1{
 	font-size: 2rem;
@@ -251,20 +251,21 @@ small{
 }
 .social-icons{
 	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+	position: relative;
+	top:40px;
+	right: 25px;	
+	margin: 0 auto;
 }
 .social-icons ul
 {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	margin:0 auto;
 }
 .social-icons ul li{
 	list-style: none;
 	margin: 10px;
-	text-align: center;
 }
 
 }
