@@ -215,16 +215,17 @@ small{
 
 .menu ul
 {
-	padding: 0;
+	padding:0px;
+	margin: 20px;
 }
 .menu ul li{
 	
 	font-size: .8rem;
-	margin: 10px 6px;
+	margin: 2px 6px;
 	
 }
 .signup-btn{
-	top: 35px;
+	top: 15px;
 	right: 5px;
 	position: absolute;
 	font-size: .6rem;
