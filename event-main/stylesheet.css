@@ -76,15 +76,9 @@ a{
 .app-text h1{
 	font-size: 4rem;
 	border-bottom : 1px solid red;
+	width: 36%;
 }
 
-.app-text h1 .dot{
-  height: 20px;
-  width: 20px;
-  background-color: #eb0707;
-  border-radius: 50%;
-  display: inline-block;
-}
 
 .app-text p{
 	font-size: 1.62rem;
@@ -181,7 +175,7 @@ small{
 	font-size: 3rem;
 	margin-left: 40px;
 	border-bottom : 1px solid red;
-	width: 55%;
+	width: 53%;
 }
 .app-text p{
 	font-size: 1.2rem;
@@ -231,8 +225,9 @@ small{
 	font-size: .6rem;
 }
 .app-text h1{
-	font-size: 2rem;
+	font-size: 3rem;
 	margin: 0;
+	width: 100%;
 	border-bottom : 1px solid red;
 }
 .app-text p{
