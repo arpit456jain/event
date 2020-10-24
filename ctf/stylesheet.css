@@ -148,7 +148,11 @@ input[type=text],
     background: #125688;
     color: white;
   }
-
+   .fa-bars
+{
+  font-size: 2rem;
+  color: red;
+}
 @media screen and (max-width: 600px) {
     .logo{
   width: 20%;
