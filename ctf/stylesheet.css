@@ -1,25 +1,29 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-.navbar{
+     .bg
+      {
+        background: url("bg.jpeg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .navbar{
+          position:sticky;
+          cursor: pointer;
+        }
+    .navbar1 a
+    {
+        color: #fff;
+        font-size: 1.6rem;
+        margin: 10px 20px;
+    }
+    .logo{
+  width: 20%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position:sticky;
-  top: 0;
-  cursor: pointer;
-}
-
-.nav_list{
-  width: 50%;
-  /*background-color: black;
-  background-color: purple;
-  */
   align-items: center;
-  display: flex;
-
+}
+.logo img{
+  width: 40%;
+  height: 17vh;
 }
 .rightNav{
   width: 50%;
@@ -27,85 +31,6 @@
   text-align: right;
 
   text-align: right;
-}
-.logo{
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo img{
-  width: 50%;
-}
-
-
-.nav_list li{
-    list-style:none;
-    padding: 26px 30px;
-
-}
-
-.nav_list li a{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-}
-.nav_list li a:hover{
-    text-decoration: none;
-    color: grey;
-}
-
-#main_search{
-  padding: 8px;
-  border-radius: 7px;
-  border: 2px solid black;
-  width: 200px;
-}
-.background{
-  background: url('bg.jpeg');
-  background-size:cover;
-}
-.box_main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  max-width: 65%;
-  margin: auto;
-  height: 80%;
-
-}
-
-.firstSection{
-  height: 100vh;
-}
-.firstHalf{
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-
-
-.text_big{
-  font-size: 100px;
-}
-.text_small{
-  font-size: 25px;
-  text-align: center;
-}
-.btn{
-  padding: 8px 20px;
-  margin: 7px 3px;
-  border: 2px solid white;
-  border-radius: 8px;
-  font-size: 16px;
-  background: none;
-  color: white;
-  cursor: pointer;
-
 }
 .btn_search{
   padding: 8px 20px;
@@ -125,6 +50,26 @@
 .btn a:hover{
     text-decoration: none;
     color: blue;
+}
+.nav_list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.text_big{
+  font-size: 7rem;
+  color: #fff;
+}
+.buttons .btn
+{
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 16px;
+  background: none;
+  color: white;
+  cursor: pointer;
+
 }
 /*---------------------------------------form------------------------------------------------*/
 input[type=text],
@@ -158,11 +103,12 @@ input[type=text],
     background-color: #f2f2f2;
     padding: 20px;
   }
-/*------------------------------------------------------footer social media icons--------------------------------------------------------------*/
+
+  /*------------------------------------------------------footer social media icons--------------------------------------------------------------*/
 
 .fa {
     padding: 20px;
-    font-size: 10px;
+    font-size: 1.5rem;
     width: 70px;
     text-align: center;
     text-decoration: none;
@@ -203,12 +149,30 @@ input[type=text],
     color: white;
   }
 
-  h2{
-    margin-top: 30px;
-    margin-bottom: 30px;
+@media screen and (max-width: 600px) {
+    .logo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 20vw;
+  height: 20vh;
+}
+.text_big{
+  font-size: 5rem;
+  color: #fff;
+}
+.fa {
+    padding:10px;
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    margin:5px 10px;
   }
-
-  .footer{
-    align-items: center;
-    margin-top: 50px;
-  }
+  .logo img{
+  width: 25vw;
+  height: 17vh;
+}
+}
