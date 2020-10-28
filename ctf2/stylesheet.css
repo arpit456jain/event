@@ -3,7 +3,7 @@
         background: url("img/bg.jpeg");
         height: 100vh;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
       }
       .navbar{
           position:sticky;
@@ -22,8 +22,8 @@
       height: 10vh;
     }.logo .secondimg
     {
-      width: 7vw;
-      height: 10vh;
+      width: 6vw;
+      height: 9vh;
     }
 
 /*----------------apoorv new styles addition-----------------------*/
