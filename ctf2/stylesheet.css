@@ -75,7 +75,9 @@
     color: grey;
 }
 .text_big{
-  font-size: 7rem;
+  font-size: 6rem;
+  font-family: calibri;
+  font-weight: 500;
   color: #fff;
 }
 .buttons .btn
@@ -94,7 +96,10 @@
   height: 5px;
   color: red;
 }
-
+  .emptydiv
+  {
+    height: 10vh;
+ }
   /*------------------------------------------------------footer social media icons--------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
     .Winners h1
