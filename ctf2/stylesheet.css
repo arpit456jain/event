@@ -16,11 +16,16 @@
         margin: 10px;
         padding:3px;
     }
-    .logo img
+    .logo .firstimg
     {
       width: 8vw;
       height: 10vh;
+    }.logo .secondimg
+    {
+      width: 7vw;
+      height: 10vh;
     }
+
 /*----------------apoorv new styles addition-----------------------*/
 
 .navbar-collapse li a:hover{
@@ -92,17 +97,31 @@
 
   /*------------------------------------------------------footer social media icons--------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
-    .logo{
-  width: 20%;
-  display: flex;
-  justify-content: center;
-    align-items: center;
-  }
-  
+    .Winners h1
+    {
+      font-size: 1.8rem;
+    }
+  .emptydiv
+  {
+    height: 2vh;
+ }
   .text_big{
     font-size: 5rem;
     color: #fff;
   }
+  .logo .firstimg
+    {
+      width: 25vw;
+      height: 13vh;
+      position: relative;
+      left: -3vw;
+    }.logo .secondimg
+    {
+      width: 15vw;
+      height: 13vh;
+      position: relative;
+      left: 45vw;
+    }
 
 }
 
