@@ -106,13 +106,13 @@
     height: 2vh;
  }
   .text_big{
-    font-size: 5rem;
+    font-size: 4rem;
     color: #fff;
   }
   .logo .firstimg
     {
-      width: 25vw;
-      height: 13vh;
+      width: 26vw;
+      height: 12vh;
       position: relative;
       left: -3vw;
     }.logo .secondimg
