@@ -3,7 +3,7 @@
         background: url("img/bg.jpeg");
         height: 100vh;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
       }
       .navbar{
           position:sticky;
@@ -16,23 +16,84 @@
         margin: 10px;
         padding:3px;
     }
+    /*----------------new styles addition-----------------------*/
+    /*------------drop shadow for boxes and images------------------------------*/
+    .imagedropshadow {
+        padding: 5px;
+        border: solid 1px #EFEFEF;
+    }
+    img:hover {
+        border: solid 1px #CCC;
+        -moz-box-shadow: 1px 1px 5px #999;
+        -webkit-box-shadow: 1px 1px 5px #999;
+            box-shadow: 1px 1px 5px #999;
+    }
+    .dropshadowclass {
+            border: solid 1px #CCC;
+        -moz-box-shadow: 5px 5px 0px #999;
+        -webkit-box-shadow: 5px 5px 0px #999;
+            box-shadow: 5px 5px 0px #999;
+            }
+    /*-----------------------------------<!--exp for side lines-->-------------------------------------*/
+    .line {
+        width: 100px;
+        height: 2px;
+        background: #fff;
+        position: fixed;
+        top: 50%;
+    }
+
+    #line_r{
+      -webkit-animation: line_r_animation 3s infinite;
+      animation: line_r_animation 3s infinite;
+    }
+
+    #line_l{
+      -webkit-animation: line_l_animation 3s infinite;
+      animation: line_l_animation 3s infinite;
+    }
+
+    @-webkit-keyframes line_l_animation {
+        0%   {left: calc(2% + 50px); width: 0px;}
+        35%   {left: calc(2% + 0px); width: 50px;}
+        70%   {left: calc(2% + 0px); width: 0px;}
+        100%   {left: calc(2% + 0px); width: 0px;}
+    }
+
+    @keyframes line_r_animation {
+        0%   {left: calc(2% + 50px); width: 0px;}
+        35%   {left: calc(2% + 0px); width: 50px;}
+        70%   {left: calc(2% + 0px); width: 0px;}
+        100%   {left: calc(2% + 0px); width: 0px;}
+    }
+
+    @-webkit-keyframes line_r_animation {
+        0%   {right: calc(2% + 50px); width: 0px;}
+        35%   {right: calc(2% + 0px); width: 50px;}
+        70%   {right: calc(2% + 0px); width: 0px;}
+        100%   {right: calc(2% + 0px); width: 0px;}
+    }
+
+    @keyframes line_r_animation {
+        0%   {right: calc(2% + 50px); width: 0px;}
+        35%   {right: calc(2% + 0px); width: 50px;}
+        70%   {right: calc(2% + 0px); width: 0px;}
+        100%   {right: calc(2% + 0px); width: 0px;}
+    }
+
+    /*----------*/
+
     .logo .firstimg
     {
       width: 8vw;
-      height: 10vh;
+      height: 13vh;
     }.logo .secondimg
     {
       width: 6vw;
-      height: 9vh;
+      height: 13vh;
     }
 
 /*----------------apoorv new styles addition-----------------------*/
-
-.navbar-collapse li a:hover{
-
-    text-decoration: none;
-    color: grey;
-}
 .benefit_ctf{
   text-decoration:none;
   color: black;
@@ -41,8 +102,33 @@
 .copyright{
  text-align: center;
 }
+.my_style{
+  background-color: #f1f6f9;
+}
+.my_style1{
+  background-color: #848ccf;
+}
+.my_text{
+   color: white;
+   font-family: 'Quantico', sans-serif; /*used only in headings*/
+}
+.my_text_size{
+  font-size: 20px;
+}
+.my_div{
+  margin:0;
+}
+.wholepage{
+  background-image: url("mtrx_final.jpg");
 
-/*--------------------------------------------------------------------*/
+}
+/*---------------------------------------------------------------------------------------------------*/
+.navbar-collapse li a:hover{
+
+    text-decoration: none;
+    color: grey;
+}
+
 
 .rightNav{
   width: 50%;
@@ -75,8 +161,7 @@
     color: grey;
 }
 .text_big{
-  font-size: 6rem;
-  font-family: calibri;
+  font-size: 6.8rem;
   font-weight: 500;
   color: #fff;
 }
@@ -92,14 +177,37 @@
   cursor: pointer;
 
 }
-.separtaion{
-  height: 5px;
-  color: red;
-}
+
   .emptydiv
   {
     height: 10vh;
  }
+
+ /*----------typing text style------------------------------------------*/
+ .text-typing {
+   font-family:monospace;
+   border-radius:50px;
+ }
+ .text-typing h1 {
+   margin:0px;
+   white-space:nowrap;
+   overflow:hidden;
+   animation:typing 4s steps(22,end) forwards,
+             blink 1s infinite;
+ }
+ @keyframes typing {
+   0% { width:0% }
+   100% { width:100% }
+ }
+ @keyframes blink {
+   0%,100% {
+     border-right:2px solid transparent;
+   }
+   50% {
+     border-right:2px solid #222;
+   }
+ }
+
   /*------------------------------------------------------footer social media icons--------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
     .Winners h1
@@ -111,21 +219,21 @@
     height: 2vh;
  }
   .text_big{
-    font-size: 4rem;
+    font-size: 2rem;
     color: #fff;
   }
   .logo .firstimg
     {
-      width: 26vw;
+      width: 30vw;
       height: 12vh;
       position: relative;
-      left: -3vw;
+      left: -7vw;
     }.logo .secondimg
     {
-      width: 15vw;
+      width: 20vw;
       height: 13vh;
       position: relative;
-      left: 45vw;
+      left: 40vw;
     }
 
 }
@@ -296,7 +404,7 @@
 }
 
 #faq #faq-list li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid white;
 }
 
 #faq #faq-list a {
@@ -322,13 +430,16 @@
 }
 
 #faq #faq-list a.collapse {
-  color: #f82249;
+  color: white;
 }
 
 #faq #faq-list a.collapsed {
-  color: #000;
+  color: white;
 }
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
+}
+.faq_white{
+  color: white;
 }
