@@ -14,8 +14,13 @@
     overflow: hidden;
 }
 
-.logo{
-    width: 8vw;
+.logo1{
+    width: 10vw;
+    cursor: pointer;
+    height: 12vh;   
+}
+.logo2{
+    width: 7vw;
     cursor: pointer;
     height: 12vh;   
 }
@@ -150,8 +155,13 @@ h1{
     {
         font-size: 1.5rem;
     }
-    .logo{
-    width: 25vw;
+   .logo1{
+    width: 30vw;
+    cursor: pointer;
+    height: 12vh;   
+}
+.logo2{
+    width: 20vw;
     cursor: pointer;
     height: 12vh;   
 }
@@ -214,4 +224,32 @@ h1{
   margin-top: 100px;
 }
 }
-@media (min-width: 992px)  {}
+
+
+
+/*about section*/
+.backg{
+     width: 100%;
+    height: 80vh;
+     background-image: url(img/desktop.jpg);
+    background-size: cover;
+    background-position: center;
+     position: relative;
+    overflow: hidden;
+}
+.para{
+    color: darkblue;
+    font-family: cursive;
+    text-align: left;
+}
+.para p
+{
+    font-size: 1.5rem;
+}
+.para h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    font-family: cursive;
+    color: #008080;
+}
