@@ -37,7 +37,7 @@ a {
 	height: 100vh;
 	
 }
-#hero img,#contact img {
+#hero img,#contact img ,#projects img{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
