@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <title>Chakravyuh</title>
+  <!--font styles for headings-->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://github.com/Apoorv0503/final_ctf/blob/main/favicon-32x32.png?raw=true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #faq {
+      padding: 60px 0;
+      width: 90%;
+      
+    }
+
+    #faq #faq-list {
+      padding: 0;
+      list-style: none;
+    }
+
+    #faq #faq-list li {
+      border-bottom: 1px solid #ddd;
+    }
+
+    #faq #faq-list a {
+      padding: 18px 0;
+      display: block;
+      position: relative;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      padding-right: 20px;
+      color: crimson;
+    }
+
+    #faq #faq-list i {
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      top: 16px;
+    }
+
+    #faq #faq-list p {
+      margin-bottom: 20px;
+    }
+
+    #faq #faq-list a.collapse {
+      color: #0bab64;
+    }
+
+    #faq #faq-list a.collapsed {
+      color: #000;
+    }
+
+    #faq #faq-list a.collapsed i::before {
+      content: "\f055" !important;
+    }
+
+    #footer {
+      background: #101522;
+      padding: 0 0 25px 0;
+      color: #eee;
+      font-size: 14px;
+    }
+
+    #footer .footer-top {
+      background: #040919;
+      padding: 60px 0 30px 0;
+    }
+
+    #footer .footer-top .footer-info {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-info h3 {
+      font-size: 26px;
+      margin: 0 0 20px 0;
+      padding: 2px 0 2px 0;
+      line-height: 1;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    #footer .footer-top .footer-info img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    #footer .footer-top .footer-info p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Raleway", sans-serif;
+      color: #fff;
+    }
+
+    #footer .footer-top .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #222636;
+      color: #eee;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+
+    #footer .footer-top .social-links a:hover {
+      background: crimson;
+      color: #fff;
+    }
+
+    #footer .footer-top h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 12px;
+      border-bottom: 2px solid crimson;
+    }
+
+    #footer .footer-top .footer-links {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #footer .footer-top .footer-links ul i {
+      padding-right: 5px;
+      color: crimson;
+      font-size: 18px;
+    }
+
+    #footer .footer-top .footer-links ul li {
+      border-bottom: 1px solid #262c44;
+      padding: 10px 0;
+    }
+
+    #footer .footer-top .footer-links ul li:first-child {
+      padding-top: 0;
+    }
+
+    #footer .footer-top .footer-links ul a {
+      color: #eee;
+    }
+
+    .events a:hover {
+      color: crimson !important;
+    }
+
+    #footer .footer-top .footer-links ul a:hover {
+      color: #0bab64;
+    }
+
+    #footer .footer-top .footer-contact {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-contact p {
+      line-height: 26px;
+      color: white;
+    }
+
+    #footer .footer-top .footer-newsletter {
+      margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-newsletter input[type="email"] {
+      border: 0;
+      padding: 6px 8px;
+      width: 65%;
+    }
+
+    #footer .footer-top .footer-newsletter input[type="submit"] {
+      background: #e0072f;
+      border: 0;
+      width: 35%;
+      padding: 6px 0;
+      text-align: center;
+      color: #fff;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    #footer .footer-top .footer-newsletter input[type="submit"]:hover {
+      background: #e0072f;
+    }
+
+    #footer .copyright {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    #footer .credits {
+      text-align: center;
+      font-size: 13px;
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- logos ko alag se daal ra hu -->
+  <div class="ajlogo">
+    <img src="img/ces.png" class="img1" alt="">
+    <img src="img/mmmut.png" alt="" class="img2">
+  </div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container-fluid">
+      <div class="nav-bar">
+        <div class="brand">
+
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home"><b>Home</b></a></li>
+            <li><a href="#services" data-after="Service"><b>Rules</b></a></li>
+            <li><a href="#projects" data-after="Projects"><b>Past Winners</b></a></li>
+            <li><a href="#faq" data-after="Contact"><b>F.A.Q.</b></i></a></li>
+            <li><a href="#contact" data-after="Contact"><b>Our Team</b></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div >
+
+        <div id="ajemptydiv">
+          <!-- ji -->
+        </div>
+        <h1 >Welcome <span></span></h1>
+        <h1>to <span></span></h1>
+        <h1>Chakravyuh.<span></span></h1>
+        <a href="#services" type="button" class="cta">Rules</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">RU<span>L</span>ES</h1>
+        <p><i class="section-title-2">“Hope not ever to see Heaven. I have come to lead you to the other shore; into
+            eternal darkness; into fire and into ice."<br><br>- <span>Inferno</span> (Dante Alighieri)</i></p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Team Event</h2>
+          <p>Chakravyuh is a team event, where each team can consist of minimum two and maximum three members.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>First Round</h2>
+          <p>First round will be based purely on quantitative aptitude. There will be no negative marking.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Second Round</h2>
+          <p>Every story needs an element of suspense! Second round will be disclosed later to the teams qualified for
+            the same.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Participate!</h2>
+          <p>“I did then what I knew how to do. Now that I know better, I do better.”<br>- Maya Angelou</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">2019 <span>Winners</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Yash Kothari</h1>
+            <h2>Winner,</h2>
+            <h2>Freshman Year</h2>
+            <p>Information Technology</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/1st.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Monil Sharma</h1>
+            <h2>Winner,</h2>
+            <h2>Freshman Year</h2>
+            <p>Information Technology</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/1st.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Garvita Saraswat</h1>
+            <h2>First Runner-Up,</h2>
+            <h2>Freshman Year</h2>
+            <p>Electronics and Communication Engineering</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/2nd.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Akshit Jaiswal</h1>
+            <h2>First Runner-Up,</h2>
+            <h2>Freshman Year</h2>
+            <p>Electronics and Communication Engineering</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/2nd.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Saumya Srivastava</h1>
+            <h2>Second Runner-Up,</h2>
+            <h2>Freshman Year</h2>
+            <p>Computer Science and Engineering</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/3rd.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Reena Patel</h1>
+            <h2>Second Runner-Up,</h2>
+            <h2>Freshman Year</h2>
+            <p>Computer Science and Engineering</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/3rd.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Our <span>Team</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon2"><img src="./img/1.png" /></div>
+          <div class="contact-info">
+            <h1>Kaustubh Srivastava</h1>
+            <h2>B. Tech Sophomore Year,</h2>
+            <h2>Computer Science & Engineering.</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon2"><img src="./img/2.jpg" /></div>
+          <div class="contact-info">
+            <h1>Rupal Singh</h1>
+            <h2>B. Tech Sophomore Year,</h2>
+            <h2>Computer Science & Engineering.</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!--REPEAT CONTACT SECTION-->
+  <!-- Contact Section -->
+  <section id="faq" class="mx-auto">
+    <div class="container2">
+      <div class="faq-head">
+        <h1 class="section-title">F.<span>A</span>.Q.</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <ul id="faq-list">
+
+            <li>
+              <a data-toggle="collapse" class="collapsed" href="#faq1">I don't know much about coding can i participate?
+                <i class="fa fa-minus-circle"></i></a>
+              <div id="faq1" class="collapse" data-parent="#faq-list">
+                <p class="faq_white">
+                  Yes you can , we organize these events just for you so that you can start and improve your skills.
+                </p>
+              </div>
+            </li>
+
+
+            <li>
+              <a data-toggle="collapse" href="#faq2" class="collapsed">Is there any entry fee to be part of this
+                contest? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq2" class="collapse" data-parent="#faq-list">
+                <p class="faq_white">
+                  NO. The entry is free.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq3" class="collapsed">What is the format of the test, Computer-based or
+                paper-based? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq3" class="collapse" data-parent="#faq-list">
+                <p class="faq_white">
+                  The first round is a pen-paper C quiz. 2nd round will be a computer- based coding round.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq4" class="collapsed">Why we should participate in this event? <i
+                  class="fa fa-minus-circle"></i></a>
+              <div id="faq4" class="collapse" data-parent="#faq-list">
+                <p class="faq_white">
+                  It improves our coding skills. If you are willing to improve your coding, then you can join this
+                  event.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq5" class="collapsed">Which language should i use for coding <i
+                  class="fa fa-minus-circle"></i></a>
+              <div id="faq5" class="collapse" data-parent="#faq-list">
+                <p class="faq_white">
+                  You can begin with any language but the preferred languages is C/C++ and Java.
+                  These all languages are easy to learn and very fast to execute.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" class="collapsed" href="#faq6">Can I submit more than one time? <i
+                  class="fa fa-minus-circle"></i></a>
+              <div id="faq6" class="collapse" data-parent="#faq-list">
+                <p class="faq_white">
+                  Yes, you can, no matter how many times you submit.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Contact Section -->
+  <!--END REPEAT CONTACT SECTION-->
+
+  <!-- Footer -->
+
+<div class="container-fluid p-0">
+   <!--footer social media icons-->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="img/ces.png" alt="TheEvenet">
+            <img src="img/mmmut.png" alt="TheEvenet">
+            <p>The Computer Engineering Society has been functioning since 1993 with the collective efforts of a group of
+               B.Tech. students who had a strong urge to complement the theoretical and practical knowledge imparted in
+                the classroom and laboratory, with emphasis on development of overall personality of budding engineering
+                 graduates</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Our Other Events</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="https://arpit456jain.github.io/CES/Codigo/index.html">Codigo</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://prakharritik.github.io/ps1/ipts/">IPTS</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="">CTF</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://siddhartha2807.github.io/debugger3.github.io/">Debugger King</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              MMMUT <br>
+              Gorakhpur<br>
+              U.P India <br>
+              <strong>Phone:</strong> 1234567890<br>
+              <strong>Email:</strong> xyz789@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+              <a href="https://www.facebook.com/ces.mmmut" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/ces_mmmut/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+              <a href="https://www.linkedin.com/company/cesmmmut/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <!-- <a href="#" class="linkedin"><i class="fa fa-github	"></i></a> -->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>CES</strong>. All Rights Reserved
+      </div>
+
+
+    </div>
+  </footer>
+
+</div>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
