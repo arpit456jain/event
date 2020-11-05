@@ -423,16 +423,16 @@ hr {transform:scale(2)}
   }
   .logo .firstimg
     {
-      width: 31vw;
-      height: 12vh;
+      width: 32vw;
+      height: 13vh;
       position: relative;
       left: -8vw;
     }.logo .secondimg
     {
-      width: 22vw;
+      width: 24vw;
       height: 13vh;
       position: relative;
-      left: 36vw;
+      left: 32vw;
     }
     .adjust{
       width:85%;
