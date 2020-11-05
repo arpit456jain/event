@@ -265,7 +265,7 @@ hr {transform:scale(2)}
 */
 
 /*-----------ye hmne ki h abhi..isse only desktop me round aa rhi img..mobile me natak h-------------------*/
-  /*-  .logo .firstimg
+   .logo .firstimg
     {
       width: 30%;
       height:30%;
@@ -279,9 +279,9 @@ hr {transform:scale(2)}
       border-radius: 50%;
       border-style: none;
 
-    }                 --*/
+    }                 
 /*ye tmhari css h*/
-    .logo .firstimg
+    /* .logo .firstimg
        {
          width: 9vw;
          height: 13vh;
@@ -289,7 +289,7 @@ hr {transform:scale(2)}
        {
          width: 6vw;
          height: 13vh;
-       }
+       } */
 
 
 /*----------------apoorv new styles addition-----------------------*/
