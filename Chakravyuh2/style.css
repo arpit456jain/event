@@ -105,7 +105,7 @@ p {
 /* Header section */
 #header {
 	position: fixed;
-	z-index: 1000;
+	z-index:2;
 	left: 0;
 	top: 0;
 	width: 100vw;
@@ -752,4 +752,14 @@ display: none;
 	{
 		font-size: 4rem;
 	}	
+	#hero h1 span {
+		position: absolute;
+		top: 1vh;
+		left: 0;
+		height: 100%;
+		width: 0;
+		background-color: crimson;
+		animation: text_reveal_box 1s ease;
+		animation-delay: .5s;
+	}
 }
