@@ -754,7 +754,7 @@ display: none;
 	}	
 	#hero h1 span {
 		position: absolute;
-		top: 1vh;
+		top: 0vh;
 		left: 0;
 		height: 100%;
 		width: 0;
