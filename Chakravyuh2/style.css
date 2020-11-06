@@ -23,7 +23,7 @@ html {
 }
 .ajlogo .img2
 {
-	width: 7vw;
+	width: 6vw;
 	height: 12vh;
 }
 #ajemptydiv
@@ -285,7 +285,7 @@ p {
 }
 #hero h1 span {
 	position: absolute;
-	top: 0;
+	top: 5vh;
 	left: 0;
 	height: 100%;
 	width: 0;
@@ -729,22 +729,22 @@ display: none;
 	.ajlogo
 	{
 		position: absolute;
-		height: 20vh;
-		width: 30vw;
+		height: 10vh;
+		width: 100vw;
 		z-index: 10;
 		width: 100vw;
 	}
 	.ajlogo .img1
 	{
-		width: 30vw;
+		width: 25vw;
 		position: absolute;
 		left: 0px;
-		height: 12vh;
+		height: 10vh;
 	}
 	.ajlogo .img2
 	{
-		width: 20vw;
-		height: 12vh;
+		width: 18vw;
+		height: 10vh;
 		position: absolute;
 		right: 0px;
 	}
