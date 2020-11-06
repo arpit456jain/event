@@ -748,5 +748,8 @@ display: none;
 		position: absolute;
 		right: 0px;
 	}
-	
+	#hero h1 
+	{
+		font-size: 4rem;
+	}	
 }
